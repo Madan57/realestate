@@ -16,7 +16,12 @@ export const Banner = ({
   imageUrl,
 }) => (
   <Flex flexWrap="wrap" justifyContent="center" alignItems="center" m="10">
-    <Image src={imageUrl} width={500} height={300} />
+    <Image
+      className="cursor-pointer transition-all duration-200"
+      src={imageUrl}
+      width={500}
+      height={300}
+    />
     <Box p="5">
       <Text color="gray.500" fontSize="sm" fontWeight="medium">
         {purpose}
@@ -31,11 +36,17 @@ export const Banner = ({
         <br />
         {desc2}
       </Text>
-      <Button fontSize="xl" bg="blue.300" color="white">
+      {/* <Button fontSize="xl" bg="blue.300" color="white">
         <Link href={linkName}>
           <a>{buttonText}</a>
         </Link>
-      </Button>
+      </Button> */}
+      <button
+        type="button"
+        className="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
+      >
+        {buttonText}
+      </button>
     </Box>
   </Flex>
 );

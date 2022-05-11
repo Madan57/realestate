@@ -33,10 +33,13 @@ const Property = ({
       cursor="pointer"
     >
       <Box>
-        <div style={{ borderRadius: "0.5rem 0.5rem 0 0", overflow: "hidden" }}>
+        <div
+          className=""
+          style={{ borderRadius: "0.5rem 0.5rem 0 0", overflow: "hidden" }}
+        >
           <Image
             layout="fixed"
-            className="rounded-full"
+            className="rounded-lg hover:opacity-80 transition-all duration-200 ease-out"
             src={coverPhoto ? coverPhoto.url : DefaultImage}
             width={400}
             height={260}

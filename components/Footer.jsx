@@ -11,7 +11,7 @@ const Footer = () => (
     © 2022 Realtor, Inc. All rights reserved. <br />
     <b>
       designed and created by{" "}
-      <span style={{ color: "#4169E1", fontWeight: 700, cursor: "pointer" }}>
+      <span className="text-blue-500 text-lg cursor-pointer">
         Madan Ghimire
       </span>{" "}
     </b>
